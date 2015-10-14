@@ -1,8 +1,23 @@
 head
+	meta(charset='utf-8')
+	meta(http-equiv='X-UA-Compatible', content='IE=edge')
+	meta(name='viewport', content='width=device-width, initial-scale=1')
+	meta(name='description', content='')
+	meta(name='', content='')
 	title myTasks
 body
-	+hello
-	+loginButtons
-template(name="hello")
-	p Welcome #{counter}
-	button Click Me
+	.navbar.navbar-default.navbar-fixed-top(role="navigation")
+		.container-fluid
+			.navbar-header
+					a.navbar-brand(href="#") myTasks
+			.nav.navbar-nav.navbar-right
+				+loginButtons
+	
+	//sidebar
+	.container-fluid
+		.row
+			.col-sm-3.no-float
+				p SidebarMenu
+			.col-sm-9.no-float
+				p Task Lists
+	

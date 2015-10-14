@@ -1,0 +1,12 @@
+body { 
+    padding-top: 65px; 
+}
+div.col-sm-3{
+    background-color: #2b6d50;
+    border-color: #1c0f0e;
+	height: 100%
+}
+
+div.col-sm-9{
+    border-color: #1c0f0e;
+}
